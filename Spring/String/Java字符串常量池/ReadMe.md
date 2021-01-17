@@ -38,8 +38,6 @@ public class StringPools58Demo {
         System.out.println(str2==str2.intern());//false
     }
 }
-
-1234567891011121314151617181920212223242526272829303132333435
 ```
 
 - ②. 原因解释一(字节码):
