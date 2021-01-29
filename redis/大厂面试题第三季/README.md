@@ -203,7 +203,7 @@ zset
   获取集合中元素的数量
     ZCARD key
   获得指定分数范围内的元素个数
-    9zCOUNT key min max
+    zCOUNT key min max
   按照排名范围删除元素
     ZREMRANGEBYRANK key start stop
   获取元素的排名
@@ -546,3 +546,160 @@ if (redissonLock.isLocked() && redissonLock.isHeldByCurrentThread()){
 ###### redis缓存淘汰策略
 
 ![image-20210126234118516](images/image-20210126234118516.png)
+
+###### redis过期键的删除策略
+
+~~~
+如果一个键是过期的，那它到了过期时间之后是不是马上就从内存中被被删除呢??
+ 
+如果回答yes，你自己走还是面试官送你?
+ 
+如果不是，那过期后到底什么时候被删除呢?？是个什么操作?
+~~~
+
+###### 生产上使用
+
+allkeys-lru: 对所有key使用LRU算法进行删除
+
+#### 5. 手写LRU
+
+##### 5.1 继承LinkedHashMap
+
+~~~java
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class LRUCacheDemo<K,V> extends LinkedHashMap<K, V> {
+
+    private int capacity;//缓存坑位
+
+    public LRUCacheDemo(int capacity) {
+        super(capacity,0.75F,false);
+        this.capacity = capacity;
+    }
+
+    @Override
+    protected boolean removeEldestEntry(Map.Entry<K, V> eldest) {
+        return super.size() > capacity;
+    }
+
+    public static void main(String[] args) {
+        LRUCacheDemo lruCacheDemo = new LRUCacheDemo(3);
+
+        lruCacheDemo.put(1,"a");
+        lruCacheDemo.put(2,"b");
+        lruCacheDemo.put(3,"c");
+        System.out.println(lruCacheDemo.keySet());
+
+        lruCacheDemo.put(4,"d");
+        System.out.println(lruCacheDemo.keySet());
+
+        lruCacheDemo.put(3,"c");
+        System.out.println(lruCacheDemo.keySet());
+        lruCacheDemo.put(3,"c");
+        System.out.println(lruCacheDemo.keySet());
+        lruCacheDemo.put(3,"c");
+        System.out.println(lruCacheDemo.keySet());
+        lruCacheDemo.put(5,"x");
+        System.out.println(lruCacheDemo.keySet());
+    }
+}
+~~~
+
+
+
+##### 5.2 
+
+~~~java
+
+class LRU{
+    public Map<Integer,Node> cache = new HashMap<>();
+    public Node tail;
+    public Node head;
+    public int size;
+    public int capacity;
+
+    public LRU(int capacity) {
+        this.capacity = capacity;
+        this.size = 0;
+
+        tail = new Node();
+        head  = new Node();
+        tail.pre = head;
+        tail.post = null;
+        head.post = tail;
+        head.pre = null;
+
+    }
+    public int get(int key) {
+        Node node = cache.get(key);
+        if (node != null) {
+            removeNode(node);
+            addToHead(node);
+            return node.value;
+        }
+        return -1;
+    }
+    public void put(int key,int value) {
+        Node node = cache.get(key);
+        if (node == null) {
+            Node newNode = new Node();
+
+            newNode.key = key;
+            newNode.value = value;
+            addToHead(newNode);
+
+            cache.put(key,newNode);
+
+            if (size > capacity) {
+                // 移除最后一个
+                removeLast();
+            }
+        } else {
+            node.value = value;
+            movoToHead(node);
+        }
+    }
+    public void movoToHead(Node node) {
+        removeNode(node);
+        addToHead(node);
+    }
+    public void addToHead(Node node) {
+        node.post = head.post;
+        node.pre = head;
+        head.post.pre = node;
+        head.post = node;
+
+        size ++;
+    }
+    // 移除最后一个
+    public void removeLast() {
+        // 移除当前节点
+        cache.remove(tail.pre.key);
+        removeNode(tail.pre);
+    }
+    // 移除当前节点
+    public void removeNode(Node node) {
+        node.pre.post = node.post;
+        node.post.pre = node.pre;
+        size --;
+    }
+}
+
+class Node{
+    public int key;
+    public int value;
+    public Node pre;
+    public Node post;
+
+    @Override
+    public String toString() {
+        return "Node{" +
+                "key=" + key +
+                ", value=" + value +
+                '}';
+    }
+}
+
+~~~
+
