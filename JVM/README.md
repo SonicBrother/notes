@@ -1,6 +1,8 @@
 ## 介绍
 
 > 来源Bilibili尚硅谷宋红康老师JVM教程：[硅谷2020最新版宋红康JVM教程](https://www.bilibili.com/video/BV1PJ411n7xZ)
+>
+> 笔记转自：https://gitee.com/moxi159753
 
 ## 目录
 
