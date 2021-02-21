@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5e8b374e-85fe-4e5b-9ae0-d301276389d4" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/Develop/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\Develop\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1omJg03JXmANtrIgWkIT7yaKwU1" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../actSpringBootDemo" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunManager">
+    <configuration name="actSpringTest.testRep" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="actSpringDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itheima.test" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.test.actSpringTest" />
+      <option name="METHOD_NAME" value="testRep" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.actSpringTest.testRep" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration useDefault="false">C:\Users\ky\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5e8b374e-85fe-4e5b-9ae0-d301276389d4" name="Default Changelist" comment="" />
+      <created>1578062432864</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578062432864</updated>
+      <workItem from="1578062437231" duration="3065000" />
+      <workItem from="1578383149890" duration="1084000" />
+      <workItem from="1613885940587" duration="1637000" />
+      <workItem from="1613888414856" duration="941000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="actSpringTest_testRep - 2020.01.03 at 23h 03m 32s.xml">
+      <configuration name="actSpringTest.testRep" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1613886392220">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1613886392220" />
+    <state width="1492" height="123" key="GridCell.Tab.0.bottom" timestamp="1613888391479">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1492" height="123" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1613888391479" />
+    <state width="1492" height="123" key="GridCell.Tab.0.center" timestamp="1613888391479">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1492" height="123" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1613888391479" />
+    <state width="1492" height="123" key="GridCell.Tab.0.left" timestamp="1613888391479">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1492" height="123" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1613888391479" />
+    <state width="1492" height="123" key="GridCell.Tab.0.right" timestamp="1613888391479">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1492" height="123" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1613888391479" />
+    <state x="270" y="59" key="SettingsEditor" timestamp="1613885977822">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="270" y="59" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1613885977822" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7a731797-4b01-4d68-bf66-ad857968e7d7" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="BpmnFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/Develop/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\Develop\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1omKb6dK4th7k33PyhRb2EDSSDk" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../actSpringBoot" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="JUnit.TestActiviti.findProcess">
+    <configuration name="TestActiviti.doTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="actSpringBootDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itheima.test" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.test.TestActiviti" />
+      <option name="METHOD_NAME" value="doTask" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestActiviti.findProcess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="actSpringBootDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itheima.test" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.test.TestActiviti" />
+      <option name="METHOD_NAME" value="findProcess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestActiviti.startProcess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="actSpringBootDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itheima.test" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.test.TestActiviti" />
+      <option name="METHOD_NAME" value="startProcess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ActApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="actSpringBootDemo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.ActApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestActiviti.findProcess" />
+        <item itemvalue="JUnit.TestActiviti.doTask" />
+        <item itemvalue="JUnit.TestActiviti.startProcess" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration useDefault="false">C:\Users\ky\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7a731797-4b01-4d68-bf66-ad857968e7d7" name="Default Changelist" comment="" />
+      <created>1578064030382</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578064030382</updated>
+      <workItem from="1578064033224" duration="252000" />
+      <workItem from="1578064531538" duration="201000" />
+      <workItem from="1578064908649" duration="773000" />
+      <workItem from="1578191074678" duration="2171000" />
+      <workItem from="1578279763016" duration="597000" />
+      <workItem from="1578364989106" duration="8334000" />
+      <workItem from="1578382824551" duration="311000" />
+      <workItem from="1578383164636" duration="7000" />
+      <workItem from="1578383254682" duration="276000" />
+      <workItem from="1578383541981" duration="40000" />
+      <workItem from="1578383628550" duration="1189000" />
+      <workItem from="1613886394874" duration="1319000" />
+      <workItem from="1613888414691" duration="594000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="TestActiviti_findProcess - 2020.01.07 at 15h 05m 48s.xml">
+      <configuration name="TestActiviti.findProcess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestActiviti_findProcess - 2020.01.07 at 15h 09m 19s.xml">
+      <configuration name="TestActiviti.findProcess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestActiviti_findProcess - 2020.01.07 at 15h 14m 16s.xml">
+      <configuration name="TestActiviti.findProcess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestActiviti_startProcess - 2020.01.07 at 15h 20m 39s.xml">
+      <configuration name="TestActiviti.startProcess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestActiviti_doTask - 2020.01.07 at 15h 29m 56s.xml">
+      <configuration name="TestActiviti.doTask" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestActiviti_doTask - 2020.01.07 at 15h 32m 45s.xml">
+      <configuration name="TestActiviti.doTask" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestActiviti_doTask - 2020.01.07 at 15h 35m 16s.xml">
+      <configuration name="TestActiviti.doTask" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestActiviti_findProcess - 2020.01.07 at 15h 44m 01s.xml">
+      <configuration name="TestActiviti.findProcess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestActiviti_findProcess - 2020.01.07 at 15h 48m 41s.xml">
+      <configuration name="TestActiviti.findProcess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestActiviti_findProcess - 2020.01.07 at 15h 49m 21s.xml">
+      <configuration name="TestActiviti.findProcess" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1613887120358">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1613887120358" />
+    <state x="299" y="72" key="Maven.ArtifactSearchDialog" timestamp="1613886578398">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="299" y="72" key="Maven.ArtifactSearchDialog/0.0.1536.834@0.0.1536.834" timestamp="1613886578398" />
+    <state x="270" y="59" key="SettingsEditor" timestamp="1613886603792">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="270" y="59" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1613886603792" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
