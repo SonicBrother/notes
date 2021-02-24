@@ -81,6 +81,12 @@ String不属于基本数据类型，但是为什么执行完成后，还是abc�
 
 这是因为String的特殊性，当我们执行String str = "abc"的时候，它会把 `abc` 放入常量池中
 
+~~~
+String有两种：直接赋值，new出的
+~~~
+
+
+
 ![image-20200314190021466](images/image-20200314190021466.png)
 
 当我们执行changeValue3的时候，会重新新建一个xxx，并没有销毁abc，然后指向xxx，然后最后我们输出的是main中的引用，还是指向的abc，因此最后输出结果还是abc
