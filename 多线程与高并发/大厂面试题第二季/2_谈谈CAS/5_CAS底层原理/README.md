@@ -159,3 +159,19 @@ CAS是compareAndSwap，比较当前工作内存中的值和主物理内存中的
 
 CAS有3个操作数，内存值V，旧的预期值A，要修改的更新值B。当且仅当预期值A和内存值V相同时，将内存值V修改为B，否者什么都不做
 
+
+
+~~~java
+ User z3 = new User("z3", 22);
+ User l4 = new User("l4", 25);
+
+ AtomicReference<User> atomicReference = new AtomicReference<>();
+ atomicReference.set(z3);
+
+ System.out.println(atomicReference.compareAndSet(z3, l4) + "\t" + atomicReference.toString());
+ System.out.println(atomicReference.compareAndSet(z3, l4) + "\t" + atomicReference.toString());
+
+~~~
+
+
+

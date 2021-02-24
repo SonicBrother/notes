@@ -65,11 +65,20 @@ public class ArrayListNotSafeDemo {
 }
 ```
 
-这个时候出现了错误，也就是java.util.ConcurrentModificationException
+这个时候出现了错误，也就是`java.util.ConcurrentModificationException`
 
 ![image-20200312205142763](images/image-20200312205142763.png)
 
-这个异常是 并发修改的异常
+这个异常是 `并发修改的异常`
+
+~~~
+故障现象
+导致原因
+解决方案
+优化建议
+~~~
+
+
 
 ## 解决方案
 
