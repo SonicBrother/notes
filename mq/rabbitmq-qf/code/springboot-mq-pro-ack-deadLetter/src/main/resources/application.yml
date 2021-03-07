@@ -1,0 +1,16 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: test-rabbitmq-producer
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    virtualHost: /
+    # 开启ack消息确认：消息发送到交换机
+    publisher-confirms: true
+    # 开启由交换机转发到队列的确认
+    publisher-returns: true
+

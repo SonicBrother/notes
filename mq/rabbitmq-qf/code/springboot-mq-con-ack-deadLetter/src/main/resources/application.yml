@@ -1,0 +1,15 @@
+server:
+  port: 8011
+spring:
+  application:
+    name: rabbitmq-comsumer
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    virtualHost: /
+      # 开启ack手动确认
+    listener:
+      simple:
+        acknowledge-mode: manual

@@ -48,15 +48,15 @@ BlockingQueue   阻塞队列，排队拥堵，首先它是一个队列，而一�
 
 BlockingQueue阻塞队列是属于一个接口，底下有七个实现类
 
-- ArrayBlockQueue：由数组结构组成的有界阻塞队列
-- LinkedBlockingQueue：由链表结构组成的有界（但是默认大小 Integer.MAX_VALUE）的阻塞队列
+- `ArrayBlockQueue`：由数组结构组成的有界阻塞队列
+- `LinkedBlockingQueu`e：由链表结构组成的有界（但是默认大小 Integer.MAX_VALUE）的阻塞队列
   - 有界，但是界限非常大，相当于无界，可以当成无界
 - PriorityBlockQueue：支持优先级排序的无界阻塞队列
 - DelayQueue：使用优先级队列实现的延迟无界阻塞队列
-- SynchronousQueue：不存储元素的阻塞队列，也即单个元素的队列
+- `SynchronousQueue`：不存储元素的阻塞队列，也即单个元素的队列
   - 生产一个，消费一个，不存储元素，不消费不生产
 - LinkedTransferQueue：由链表结构组成的无界阻塞队列
-- LinkedBlockingDeque：由链表结构组成的双向阻塞队列
+- LinkedBlocking`Deque`：由链表结构组成的双向阻塞队列
 
 
 
@@ -70,7 +70,7 @@ BlockingQueue阻塞队列是属于一个接口，底下有七个实现类
 
 
 
-| 抛出异常 | 当阻塞队列满时：在往队列中add插入元素会抛出 IIIegalStateException：Queue full                      当阻塞队列空时：再往队列中remove移除元素，会抛出NoSuchException |
+| 抛出异常 | 当阻塞队列满时：在往队列中add插入元素会抛出 IIIegalStateException：Queue full <br />当阻塞队列空时：再往队列中remove移除元素，会抛出NoSuchException |
 | -------- | ------------------------------------------------------------ |
 | 特殊性   | 插入方法，成功true，失败false       移除方法：成功返回出队列元素，队列没有就返回空 |
 | 一直阻塞 | 当阻塞队列满时，生产者继续往队列里put元素，队列会一直阻塞生产线程直到put数据or响应中断退出， 当阻塞队列空时，消费者线程试图从队列里take元素，队列会一直阻塞消费者线程直到队列可用。 |
@@ -167,7 +167,7 @@ c
 null
 ```
 
-### 阻塞队列组
+### 阻塞队列组 - 不见不散
 
 我们使用 put的方法，添加元素时候，如果阻塞队列满了后，添加消息的线程，会一直阻塞，直到队列元素减少，会被清空，才会唤醒
 
@@ -190,7 +190,7 @@ blockingQueue.take();
 
 
 
-### 不见不散组
+### 不见不散组-过时不候
 
 offer( )  ， poll 加时间
 
@@ -521,6 +521,35 @@ t2	 0
 t1	 1
 t2	 0
 ```
+
+
+
+~~~
+sychronized -> lock
+wait -> await
+notify -> singal
+
+1.原始构成
+ synchronized是关键字属于JVM层面
+    monitorenter（底层通过monitor对象来完成，其实wait/notify等方法也依赖于monitor对象，只有在同步块或方法中才能调用wait/notify等方法）
+    monitorexit
+ lock是具体类（java.util.concurrent.locks.lock）是api层面的锁
+2.使用方法
+ synchronized不需要用户去手动释放锁，当synchronized代码执行完后系统会自动让线程释放对锁的占用
+ ReentrantLock则需要用户去手动释放锁，若没有主动释放，就可能出现死锁
+3.等待是否可以中断
+ synchronized不可中断，除非抛出异常或正常执行结束
+ ReentrantLock可中断， 设置超时方法tryLock(long timeout, TimeUnit unit)
+                                        lockInterruptibly()放代码块中，调用interrupt()方法可中断
+4.加锁是否公平
+ synchronized非公平锁
+ ReentrantLock两者都可，默认是非公平锁，构造方法可以传入boolean值，true为公平锁，false为非公平锁
+5.锁绑定多个条件condition
+ synchronized没有
+ ReentrantLock用来实现分组唤醒需要唤醒的线程，可以精确唤醒，而不是像synchronized随即唤醒一个或者全部唤醒
+~~~
+
+
 
 ## 生成者和消费者3.0
 
