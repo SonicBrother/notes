@@ -608,7 +608,7 @@ public class LRUCacheDemo<K,V> extends LinkedHashMap<K, V> {
 
 
 
-##### 5.2 
+##### 5.2 手写LRU算法
 
 ~~~java
 
