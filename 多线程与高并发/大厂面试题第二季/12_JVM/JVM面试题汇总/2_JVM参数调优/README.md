@@ -202,10 +202,10 @@ MAX_MEMORY(-Xmx) = 3790077952(字节)、3614.5MB
 
 - -Xms：初始化堆内存，默认为物理内存的1/64，等价于 -XX:initialHeapSize
 - -Xmx：最大堆内存，默认为物理内存的1/4，等价于-XX:MaxHeapSize
-- -Xss：设计单个线程栈的大小，一般默认为512K~1024K，等价于 -XX:ThreadStackSize
-  - 使用 jinfo -flag ThreadStackSize   会发现 -XX:ThreadStackSize = 0
+- -Xss：设计单个线程栈的大小，一般默认为512K~1024K，等价于 -XX:ThreadStackSize`配置方式 ：-Xss128k/m/g`
+  - 使用 jinfo -flag ThreadStackSize   会发现 -XX:ThreadStackSize = 0 代表使用出厂默认
   - 这个值的大小是取决于平台的
-  - Linux/x64:1024KB
+  - Linux/x64:`1024KB`
   - OS X：1024KB
   - Oracle Solaris：1024KB
   - Windows：取决于虚拟内存的大小
@@ -213,7 +213,7 @@ MAX_MEMORY(-Xmx) = 3790077952(字节)、3614.5MB
 - -XX:MetaspaceSize：设置元空间大小
   - 元空间的本质和永久代类似，都是对JVM规范中方法区的实现，不过元空间与永久代之间最大的区别在于：元空间并不在虚拟机中，而是使用本地内存，因此，默认情况下，元空间的大小仅受本地内存限制。
   - -Xms10m -Xmx10m -XX:MetaspaceSize=1024m  -XX:+PrintFlagsFinal
-  - 但是默认的元空间大小：只有20多M
+  - 但是`默认的元空间大小：只有20多M`
   - 为了防止在频繁的实例化对象的时候，让元空间出现OOM，因此可以把元空间设置的大一些
 - -XX:PrintGCDetails：输出详细GC收集日志信息
   - GC
