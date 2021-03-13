@@ -137,3 +137,7 @@ Debug步骤
 10 随后beanA继续他的属性填充工作，此时也获取到了beanB，beanA也随之完成了创建，回到getsingleton()方法中继续向下执行，将beanA从二级缓存移动到一级缓存中
 ~~~
 
+~~~
+refresh():容器初始化方法
+~~~
+
