@@ -142,3 +142,26 @@ mapper配置文件设置
 
 
 
+MyBatis的flushCache和useCache的使用
+
+~~~
+1 当为select语句时：
+flushCache默认为false，表示任何时候语句被调用，都不会去清空本地缓存和二级缓存。
+useCache默认为true，表示会将本条语句的结果进行二级缓存。
+
+2 当为insert、update、delete语句时：
+
+flushCache默认为true，表示任何时候语句被调用，都会导致本地缓存和二级缓存被清空。
+useCache属性在该情况下没有。
+
+
+当为select语句的时候，如果没有去配置flushCache、useCache，那么默认是启用缓存的，所以，如果有必要，那么就需要人工修改配置，修改结果类似下面：
+
+<select id="save" parameterType="XX" flushCache="true" useCache="false">
+    ……
+</select>
+update 的时候如果 flushCache="false"，则当你更新后，查询的数据数据还是老的数据。
+~~~
+
+
+
