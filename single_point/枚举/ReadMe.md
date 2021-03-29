@@ -1,7 +1,5 @@
 # 枚举的使用
 
-- ex
-
 ```java
 public enum CountryEnum {
 
