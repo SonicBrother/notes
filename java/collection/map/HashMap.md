@@ -701,3 +701,4 @@ public boolean containsValue(Object value) {
 1. [视频](https://www.bilibili.com/video/BV1LJ411W7dP)
 2. [3y](https://mp.weixin.qq.com/s?__biz=MzI4Njg5MDA5NA==&mid=2247484139&idx=1&sn=bb73ac07081edabeaa199d973c3cc2b0&chksm=ebd743eadca0cafc532f298b6ab98b08205e87e37af6a6a2d33f5f2acaae245057fa01bd93f4&scene=21#wechat_redirect)
 3. [csdn](https://blog.csdn.net/panweiwei1994/article/details/77244920)
+4. https://gitee.com/gu_chun_bo/java-construct.git
